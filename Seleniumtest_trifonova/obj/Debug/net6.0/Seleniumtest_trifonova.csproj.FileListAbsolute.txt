@@ -95,3 +95,7 @@ C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifo
 C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifonova\obj\Debug\net6.0\Seleniumtest_trifonova.pdb
 C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifonova\obj\Debug\net6.0\Seleniumtest_trifonova.genruntimeconfig.cache
 C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifonova\obj\Debug\net6.0\ref\Seleniumtest_trifonova.dll
+C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifonova\bin\Debug\net6.0\FluentAssertions.Core.dll
+C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifonova\bin\Debug\net6.0\FluentAssertions.dll
+C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifonova\bin\Debug\net6.0\WebDriver.Support.dll
+C:\Users\Acer Extensa 15\RiderProjects\Seleniumtest_trifonova\Seleniumtest_trifonova\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll

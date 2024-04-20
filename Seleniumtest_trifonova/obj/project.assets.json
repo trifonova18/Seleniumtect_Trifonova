@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FluentAssertions/4.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/FluentAssertions.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net45/FluentAssertions.dll": {
+            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/FluentAssertions.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net45/FluentAssertions.dll": {
+            "related": ".Core.pdb;.Core.xml;.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.9.0": {
         "type": "package",
         "compile": {
@@ -319,6 +338,22 @@
           "build/NUnit.props": {}
         }
       },
+      "Selenium.Support/4.18.1": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.18.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Selenium.WebDriver/4.18.1": {
         "type": "package",
         "dependencies": {
@@ -344,6 +379,18 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta2"
+        },
+        "compile": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
@@ -360,6 +407,109 @@
     }
   },
   "libraries": {
+    "FluentAssertions/4.4.0": {
+      "sha512": "rFMspbGi+VIKSGFbe5FPUCT+pwxlN5Ao99C2NSfOhja7KbdFtbVRNajjX4iMGOeve53eS0GYkFI8CGh/Z8xLRg==",
+      "type": "package",
+      "path": "fluentassertions/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentassertions.4.4.0.nupkg.sha512",
+        "fluentassertions.nuspec",
+        "lib/dotnet/FluentAssertions.Core.dll",
+        "lib/dotnet/FluentAssertions.Core.pdb",
+        "lib/dotnet/FluentAssertions.dll",
+        "lib/dotnet/FluentAssertions.pdb",
+        "lib/dotnet/FluentAssertions.xml",
+        "lib/monoandroid/FluentAssertions.Core.dll",
+        "lib/monoandroid/FluentAssertions.Core.pdb",
+        "lib/monoandroid/FluentAssertions.Core.xml",
+        "lib/monotouch/FluentAssertions.Core.dll",
+        "lib/monotouch/FluentAssertions.Core.pdb",
+        "lib/monotouch/FluentAssertions.Core.xml",
+        "lib/net40/FluentAssertions.Core.dll",
+        "lib/net40/FluentAssertions.Core.pdb",
+        "lib/net40/FluentAssertions.Core.xml",
+        "lib/net40/FluentAssertions.dll",
+        "lib/net40/FluentAssertions.pdb",
+        "lib/net40/FluentAssertions.xml",
+        "lib/net45/FluentAssertions.Core.dll",
+        "lib/net45/FluentAssertions.Core.pdb",
+        "lib/net45/FluentAssertions.Core.xml",
+        "lib/net45/FluentAssertions.dll",
+        "lib/net45/FluentAssertions.pdb",
+        "lib/net45/FluentAssertions.xml",
+        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.dll",
+        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.pdb",
+        "lib/portable-monotouch+monoandroid+xamarin.ios/FluentAssertions.Core.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.XML",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.Core.xml",
+        "lib/portable-win81+wpa81/FluentAssertions.dll",
+        "lib/portable-win81+wpa81/FluentAssertions.pdb",
+        "lib/portable-win81+wpa81/FluentAssertions.pri",
+        "lib/portable-win81+wpa81/FluentAssertions.xml",
+        "lib/sl5/FluentAssertions.Core.dll",
+        "lib/sl5/FluentAssertions.Core.pdb",
+        "lib/sl5/FluentAssertions.Core.xml",
+        "lib/sl5/FluentAssertions.dll",
+        "lib/sl5/FluentAssertions.pdb",
+        "lib/sl5/FluentAssertions.xml",
+        "lib/sl5/Microsoft.CSharp.dll",
+        "lib/sl5/Microsoft.CSharp.xml",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll",
+        "lib/sl5/Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml",
+        "lib/sl5/System.Xml.Linq.dll",
+        "lib/sl5/System.Xml.Linq.xml",
+        "lib/sl5/de/Microsoft.CSharp.resources.dll",
+        "lib/sl5/de/System.Xml.Linq.resources.dll",
+        "lib/sl5/es/Microsoft.CSharp.resources.dll",
+        "lib/sl5/es/System.Xml.Linq.resources.dll",
+        "lib/sl5/fr/Microsoft.CSharp.resources.dll",
+        "lib/sl5/fr/System.Xml.Linq.resources.dll",
+        "lib/sl5/it/Microsoft.CSharp.resources.dll",
+        "lib/sl5/it/System.Xml.Linq.resources.dll",
+        "lib/sl5/ja/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ja/System.Xml.Linq.resources.dll",
+        "lib/sl5/ko/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ko/System.Xml.Linq.resources.dll",
+        "lib/sl5/ru/Microsoft.CSharp.resources.dll",
+        "lib/sl5/ru/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hans/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hans/System.Xml.Linq.resources.dll",
+        "lib/sl5/zh-Hant/Microsoft.CSharp.resources.dll",
+        "lib/sl5/zh-Hant/System.Xml.Linq.resources.dll",
+        "lib/win81/FluentAssertions.Core.dll",
+        "lib/win81/FluentAssertions.Core.pdb",
+        "lib/win81/FluentAssertions.Core.xml",
+        "lib/win81/FluentAssertions.dll",
+        "lib/win81/FluentAssertions.pdb",
+        "lib/win81/FluentAssertions.pri",
+        "lib/win81/FluentAssertions.xml",
+        "lib/wp8/FluentAssertions.Core.dll",
+        "lib/wp8/FluentAssertions.Core.pdb",
+        "lib/wp8/FluentAssertions.Core.xml",
+        "lib/wp8/FluentAssertions.dll",
+        "lib/wp8/FluentAssertions.pdb",
+        "lib/wp8/FluentAssertions.xml",
+        "lib/wpa81/FluentAssertions.Core.dll",
+        "lib/wpa81/FluentAssertions.Core.pdb",
+        "lib/wpa81/FluentAssertions.Core.xml",
+        "lib/wpa81/FluentAssertions.dll",
+        "lib/wpa81/FluentAssertions.pdb",
+        "lib/wpa81/FluentAssertions.pri",
+        "lib/wpa81/FluentAssertions.xml",
+        "lib/xamarin.ios/FluentAssertions.Core.dll",
+        "lib/xamarin.ios/FluentAssertions.Core.pdb",
+        "lib/xamarin.ios/FluentAssertions.Core.xml"
+      ]
+    },
     "Microsoft.CodeCoverage/17.9.0": {
       "sha512": "RGD37ZSrratfScYXm7M0HjvxMxZyWZL4jm+XgMZbkIY1UPgjUpbNA/t+WTGj/rC/0Hm9A3IrH3ywbKZkOCnoZA==",
       "type": "package",
@@ -672,6 +822,20 @@
         "nunit.nuspec"
       ]
     },
+    "Selenium.Support/4.18.1": {
+      "sha512": "o83krRx6DklUtg4Onukp5SE9r6drfBDxzmGrFynICb8fTlXXZ75zdp8wp3+8sdcRaBCgpdlgQFCqoA6HOjzhow==",
+      "type": "package",
+      "path": "selenium.support/4.18.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.18.1.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
     "Selenium.WebDriver/4.18.1": {
       "sha512": "x9Pkz+kzcZ6dToJFLiem36pp0xmIfu/DXFf3U7EaoFqdtYyLsDJB0e/v58NAghcPTrAwJMSduEAokBRFFCxAxg==",
       "type": "package",
@@ -716,6 +880,19 @@
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "sha512": "de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "type": "package",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll",
+        "seleniumextras.waithelpers.1.0.2.nupkg.sha512",
+        "seleniumextras.waithelpers.nuspec"
+      ]
+    },
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
@@ -740,10 +917,13 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FluentAssertions >= 4.4.0",
       "Microsoft.NET.Test.Sdk >= 17.9.0",
       "NUnit >= 4.1.0",
+      "Selenium.Support >= 4.18.1",
       "Selenium.WebDriver >= 4.18.1",
-      "Selenium.WebDriver.ChromeDriver >= 123.0.6312.12200"
+      "Selenium.WebDriver.ChromeDriver >= 123.0.6312.12200",
+      "SeleniumExtras.WaitHelpers >= 1.0.2"
     ]
   },
   "packageFolders": {
@@ -783,6 +963,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FluentAssertions": {
+            "target": "Package",
+            "version": "[4.4.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.9.0, )"
@@ -791,6 +975,10 @@
             "target": "Package",
             "version": "[4.1.0, )"
           },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.18.1, )"
+          },
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.18.1, )"
@@ -798,6 +986,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[123.0.6312.12200, )"
+          },
+          "SeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           }
         },
         "imports": [
@@ -819,5 +1011,17 @@
         "runtimeIdentifierGraphPath": "C:\\Users\\Acer Extensa 15\\.dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FluentAssertions 4.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "FluentAssertions",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
