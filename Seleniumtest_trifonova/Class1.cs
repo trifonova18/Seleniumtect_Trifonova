@@ -92,6 +92,9 @@ public void newCommunity()
     driver.FindElement(By.CssSelector("textarea[placeholder='Название сообщества']")).SendKeys("Cats");
     driver.FindElement(By.CssSelector("textarea[placeholder='Описание сообщества']")).SendKeys("Cute Cats");
     driver.FindElement(By.XPath("//span[contains(text(), 'Создать')]")).Click();
+    var CommunityName = driver.FindElement(By.CssSelector("[data-tid=\"Name\"]")).Text;
+    var expectedCommunityName = "Cats";
+    Assert.That(CommunityName == expectedCommunityName, "Сообщество не добавлено" );
     driver.FindElement(By.CssSelector("button[data-tid='DeleteButton']")).Click();
     driver.FindElement(By.XPath("//span[contains(text(), 'Удалить')]")).Click();
 }
@@ -106,7 +109,7 @@ public void addAddress()
     var AdressText = driver
         .FindElement(By.XPath("//*[@id=\"root\"]/section/section[2]/section[2]/div[2]/div[2]/div/div[2]")).Text;
     var expectedAdressText = "Санкт-Петербург";
-    Assert.That(AdressText == expectedAdressText, "Адрес добавлен");
+    Assert.That(AdressText == expectedAdressText, "Адрес отличается от ожидаемого или не добавлен");
 }
 
 }
